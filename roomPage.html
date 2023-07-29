@@ -42,20 +42,67 @@
         <h4>$ 100 / Day</h4>
       </div>
       <hr class="line" />
-      <form class="check-form">
-        <div>
-          <label> Check-in</label>
-          <input type="text" placeholder="Add Date" />
+      <form
+        class="container mt-3 rounded"
+        style="
+          margin: 150px;
+          max-width: 420px;
+          padding: 30px 30px 60px 30px;
+          background-color: white;
+          font-family: Helvetica;
+          font-weight: 600;
+          color: #484848;
+        "
+      >
+        <h1 style="font-size: 2em; font-weight: bold; margin-bottom: 15px">
+          Book unique home and experiences.
+        </h1>
+        <div class="form-group" style="font-size: small">
+          <label>WHERE</label><br />
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Anywhere"
+            name="destination"
+          />
         </div>
-        <div>
-          <label> Check-in</label>
-          <input type="text" placeholder="Add Date" />
+        <div class="input-group-prepend" style="font-size: small">
+          <label>CHECK IN</label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+          &emsp; &emsp; <label>CHECK OUT</label><br />
         </div>
-        <div class="guest-field">
-          <label> Check-in</label>
-          <input type="text" placeholder="2 Guest" />
+        <div class="input-group" style="font-size: small">
+          <input
+            class="form-control"
+            type="date"
+            placeholder="dd-mm-yyyy"
+            name="checkin"
+          />
+          <input
+            class="form-control"
+            type="date"
+            placeholder="dd-mm-yyyy"
+            name="checkout"
+          />
         </div>
-        <button type="submit">Check Availability</button>
+        <br />
+        <div class="form-group" style="font-size: small">
+          <label>GUESTS</label><br />
+          <select class="custom-select">
+            <option selected>1 guest</option>
+            <option value="Adults">Adults</option>
+            <option value="Children">Children</option>
+            <option value="Infants">Infant</option></select
+          ><br />
+        </div>
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+            style="float: right"
+          >
+            Search
+          </button>
+        </div>
       </form>
       <!-- details list -->
       <ul class="details-list">
