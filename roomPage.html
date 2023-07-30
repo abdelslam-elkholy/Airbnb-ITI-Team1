@@ -21,12 +21,12 @@
       <div class="house-title">
         <h1>Wenge House</h1>
         <div class="row">
-          <div class="m-1">
-            <i class="fas fa-star"></i>
+          <div class="m-2">
+            <i class="fas fa-star">4.5</i>
             <span>(245 Reviews)</span>
           </div>
 
-          <p>Location: San Francisco, California, United States</p>
+          <div>. Location: San Francisco, California, United States</div>
         </div>
       </div>
       <div class="gallery">
@@ -42,90 +42,86 @@
         <h4>$ 100 / Day</h4>
       </div>
       <hr class="line" />
-      <form
-        class="container mt-3 rounded"
-        style="
-          margin: 150px;
-          max-width: 420px;
-          padding: 30px 30px 60px 30px;
-          background-color: white;
-          font-family: Helvetica;
-          font-weight: 600;
-          color: #484848;
-        "
-      >
-        <h1 style="font-size: 2em; font-weight: bold; margin-bottom: 15px">
-          Book unique home and experiences.
-        </h1>
-        <div class="form-group" style="font-size: small">
-          <label>WHERE</label><br />
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Anywhere"
-            name="destination"
-          />
-        </div>
-        <div class="input-group-prepend" style="font-size: small">
-          <label>CHECK IN</label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-          &emsp; &emsp; <label>CHECK OUT</label><br />
-        </div>
-        <div class="input-group" style="font-size: small">
-          <input
-            class="form-control"
-            type="date"
-            placeholder="dd-mm-yyyy"
-            name="checkin"
-          />
-          <input
-            class="form-control"
-            type="date"
-            placeholder="dd-mm-yyyy"
-            name="checkout"
-          />
-        </div>
-        <br />
-        <div class="form-group" style="font-size: small">
-          <label>GUESTS</label><br />
-          <select class="custom-select">
-            <option selected>1 guest</option>
-            <option value="Adults">Adults</option>
-            <option value="Children">Children</option>
-            <option value="Infants">Infant</option></select
-          ><br />
-        </div>
-        <div class="form-group">
-          <button
-            type="submit"
-            class="btn btn-primary btn-lg"
-            style="float: right"
+      <div class="d-flex">
+        <!-- details list -->
+        <ul class="details-list">
+          <li>
+            <i class="fas fa-home"></i>Entire Home
+            <span>You will have the entire flat for you.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-soap"></i>Enhanced Clean
+            <span>This host committed to Staybnb's cleaning process.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-map-pin"></i>Great Location
+            <span>90% of recent guests gave the location a 5-star rating.</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-heart"></i>Great Check-in Experience
+            <span
+              >100% of recent guests gave the check-in process a 5-star
+              rating.</span
+            >
+          </li>
+        </ul>
+        <form
+          class="container mt-3 rounded form-checkin"
+          style="
+            max-width: 420px;
+            padding: 30p 30px 60px 30px;
+            background-color: white;
+            font-family: Helvetica;
+            font-weight: 600;
+            color: #484848;
+          "
+        >
+          <div
+            class="d-flex justify-content-between p-2"
+            style="font-size: 15px"
           >
-            Search
-          </button>
-        </div>
-      </form>
-      <!-- details list -->
-      <ul class="details-list">
-        <li>
-          <i class="fas fa-home"></i>Entire Home
-          <span>You will have the entire flat for you.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-soap"></i>Enhanced Clean
-          <span>This host committed to Staybnb's cleaning process.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-map-pin"></i>Great Location
-          <span>90% of recent guests gave the location a 5-star rating.</span>
-        </li>
-        <li>
-          <i class="fa-solid fa-heart"></i>Great Check-in Experience
-          <span
-            >100% of recent guests gave the check-in process a 5-star
-            rating.</span
-          >
-        </li>
-      </ul>
+            <div>
+              <span style="font-size: 1.2rem; font-weight: 600"> 100$ </span>
+              night
+            </div>
+            <div class="m-2">
+              <i class="fas fa-star">4.5</i>
+              <span>(245 Reviews)</span>
+            </div>
+          </div>
+          <div class="input-group-prepend" style="font-size: small">
+            <label>CHECK IN</label> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+            &emsp; &emsp; <label>CHECK OUT</label><br />
+          </div>
+          <div class="input-group" style="font-size: small">
+            <input
+              class="form-control"
+              type="date"
+              placeholder="dd-mm-yyyy"
+              name="checkin"
+            />
+            <input
+              class="form-control"
+              type="date"
+              placeholder="dd-mm-yyyy"
+              name="checkout"
+            />
+          </div>
+          <br />
+          <div class="form-group" style="font-size: small">
+            <label>GUESTS</label><br />
+            <select class="custom-select">
+              <option selected>1 guest</option>
+              <option value="Adults">Adults</option>
+              <option value="Children">Children</option>
+              <option value="Infants">Infant</option></select
+            ><br />
+          </div>
+          <div class="form-group">
+            <button type="submit">Reserve</button>
+          </div>
+        </form>
+      </div>
       <hr class="line" />
       <!-- home description -->
       <p class="home-desc">

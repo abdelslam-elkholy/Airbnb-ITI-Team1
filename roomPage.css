@@ -1,3 +1,11 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .house-details {
   padding: 0 5%;
 }
@@ -7,12 +15,12 @@
 .house-title h1 {
   font-weight: 600;
 }
-.house-title .row {
+.row {
   display: flex;
-
   align-items: center;
+  text-decoration: underline;
+  font-weight: 700;
 }
-
 .gallery {
   display: grid;
   grid-gap: 10px;
@@ -42,36 +50,23 @@
   max-width: 800px;
   margin: 20px 0 50px;
 }
-.check-form {
-  margin-top: 30px 0;
-  background: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 10px 50px;
+
+.form-checkin {
+  width: 33%;
+  border: 1px solid rgba(0, 0, 0, 0.603);
 }
-.check-form label {
-  display: block;
-}
-.check-form div {
-  padding: 20px;
-}
-.check-form input {
-  background: transparent;
-  border: 0;
-  outline: none;
-}
-.check-form button {
-  background: #ff5361;
+.form-checkin button {
+  background: linear-gradient(to bottom, #ad045b 15%, #940750 31%, #ff0084 97%);
   border: 0;
   outline: none;
   color: #fff;
   padding: 18px;
-  width: 350px;
+  /* width: 40px; */
   border-radius: 8px;
   font-size: 16px;
+  align-self: center;
+  padding: 1rem 2rem;
+  width: 100%;
 }
 .guest-field {
   flex: 1;
